@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    padding: 7px 12px;
+    border-radius: 7px;
+    border: none;
+    background-color: #2563eb;
+    color: #fff;
+    font-weight: 700;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #3b82f6;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+.input-area {
+    width: fit-content;
+    max-width: 80vw;
+}
+
+textarea {
+    border: 1px solid #9ca3af;
+    border-radius: 7px;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+}
+
+select {
+    border: 1px solid #9ca3af;
+    border-radius: 7px;
+    outline: none;
+    padding: 10px;
+}
+
+.submit {
+    margin-top: 20px;
+}
