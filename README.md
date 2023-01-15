@@ -1,0 +1,1 @@
+JavaScript apps - list of projects with detailed explanations for beginner developers.
