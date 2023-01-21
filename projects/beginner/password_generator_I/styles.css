@@ -6,6 +6,7 @@
 
 body {
     background-color: #cbd5e1;
+    color: #e2e8f0;
     font-family: 'Open Sans', sans-serif;
     width: 100vw;
     height: 100vh;
@@ -53,8 +54,8 @@ button:hover {
 }
 
 .title {
-    color: #fff;
     font-weight: 700;
+    font-size: 22px;
 }
 
 .generate-btn {
