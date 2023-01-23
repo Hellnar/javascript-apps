@@ -57,9 +57,20 @@ button:hover {
     font-size: 22px;
 }
 
+.password {
+    width: 100%;
+}
+
 .box-length {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.box-length input {
+    margin: 0;
+    width: 100%;
 }
 
 .box {

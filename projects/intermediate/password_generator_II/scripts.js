@@ -1,9 +1,28 @@
+const letters = "abcdefghijklmnopqrstuvwxyz"
+const numbers = "0123456789"
+const special = "!#$%&*+-=?"
+
 document.querySelector("button").addEventListener("click", () => {
-    const chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!#$%&*+-=?"
+    const vocabulary = setVocabulary()
     let pass = ""
-    for(let length = 14; length > 0; length--) {
-        const randomNumber = Math.floor(Math.random() * chars.length)
-        pass += chars.charAt(randomNumber)
+    const passLength = parseInt(document.querySelector(".length-num").innerText)
+    for(let length = passLength; length > 0; length--) {
+        const randomNumber = Math.floor(Math.random() * vocabulary.length)
+        pass += vocabulary.charAt(randomNumber)
     }
     document.querySelector("input").value = pass
 })
+
+document.querySelector("#length-range").addEventListener("input", (e) => {
+    console.log(e)
+    document.querySelector(".length-num").innerText = e.target.value
+})
+
+function setVocabulary() {
+    let vocabulary = ""
+    if(document.querySelector("#lowercase").checked) vocabulary += letters
+    if(document.querySelector("#uppercase").checked) vocabulary += letters.toUpperCase()
+    if(document.querySelector("#numbers").checked) vocabulary += numbers
+    if(document.querySelector("#special").checked) vocabulary += special
+    return vocabulary
+}
